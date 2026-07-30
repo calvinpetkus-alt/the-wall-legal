@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Wall — Teams for Coaches</title>
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0; background: #0E0F12; color: #F3F4F6;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 96px; }
+  h1 { font-size: 34px; margin: 0 0 12px; }
+  h2 { font-size: 18px; margin: 36px 0 8px; color: #B4F22E; }
+  p, li { color: #C7CBD1; font-size: 16px; }
+  a { color: #B4F22E; }
+  .muted { color: #9CA3AF; font-size: 14px; }
+  strong { color: #F3F4F6; }
+
+  .hero p { font-size: 18px; }
+  .features { list-style: none; padding: 0; margin: 24px 0; }
+  .features li {
+    padding: 14px 0 14px 28px; position: relative;
+    border-bottom: 1px solid #23262C;
+  }
+  .features li:last-child { border-bottom: none; }
+  .features li::before {
+    content: "•"; color: #B4F22E; position: absolute; left: 0; font-size: 20px;
+  }
+
+  form { margin-top: 24px; }
+  label { display: block; font-size: 14px; color: #9CA3AF; margin: 16px 0 6px; }
+  input {
+    width: 100%; box-sizing: border-box; background: #17181C; color: #F3F4F6;
+    border: 1px solid #2A2D33; border-radius: 8px; padding: 12px 14px; font-size: 16px;
+  }
+  input:focus { outline: none; border-color: #B4F22E; }
+  button {
+    margin-top: 24px; background: #B4F22E; color: #0E0F12; border: none;
+    border-radius: 8px; padding: 14px 24px; font-size: 16px; font-weight: 600;
+    cursor: pointer;
+  }
+  button:hover { opacity: 0.9; }
+
+  footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid #23262C; }
+  footer a { display: inline; margin-right: 16px; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <h1>Bring The Wall to your team</h1>
+    <p>Your roster's wall-ball totals, tracked automatically — the accountability of a shared spreadsheet, with numbers nobody has to take on faith.</p>
+  </div>
+
+  <h2>What your team gets</h2>
+  <ul class="features">
+    <li><strong>Hands-free counted wall ball.</strong> Players lean their phone against the wall and throw — no tapping a screen between reps.</li>
+    <li><strong>A weekly leaderboard and club target.</strong> Everyone sees where the team stands, reset fresh every Monday.</li>
+    <li><strong>Nobody hides at zero.</strong> The full roster shows up on the board, including anyone who hasn't started yet — that's the accountability that makes it work.</li>
+    <li><strong>Bring your existing sheet.</strong> Send us your roster and we'll get your team's names loaded in before day one.</li>
+  </ul>
+
+  <h2>Request a team</h2>
+  <p class="muted">Tell us about your program and we'll follow up by email.</p>
+
+  <form action="https://formspree.io/f/xrendawo" method="POST">
+    <label for="name">Your name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="school">School / club</label>
+    <input type="text" id="school" name="school" required>
+
+    <label for="roster_size">Roster size</label>
+    <input type="number" id="roster_size" name="roster_size" min="1" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <button type="submit">Request a team</button>
+  </form>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <p class="muted">Questions? Email <a href="mailto:calvinpetkus@gmail.com">calvinpetkus@gmail.com</a>.</p>
+  </footer>
+</div>
+</body>
+</html>
